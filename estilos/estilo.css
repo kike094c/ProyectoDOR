@@ -145,7 +145,7 @@ footer{
 
 /* The new syntax needed by standard-compliant browsers (IE 10 and Firefox 10 onwards), without prefix */  
 body{
-    background-image: url("../img/fuerteventura.png");
+    background-image: url("http://blog.fuertecharter.com/wp-content/uploads/2015/08/es.enjoyfuerteventura.net--672x372.jpg");
     background-repeat: no-repeat;
     background-size: 100%;
 }

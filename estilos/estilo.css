@@ -73,10 +73,9 @@ header ul li:hover{
 }
 #cuerpo{	
 	background-color:tomato;
-	height:500px;
-	line-height:500px;
-	display: flex;
-    flex: none;
+	height:auto;
+	line-height:100px;
+	width: auto;
     flex: 4 auto;
     
 }

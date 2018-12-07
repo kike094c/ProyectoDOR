@@ -1,0 +1,152 @@
+.flex-container{
+	width:90%;
+	max-width:960px;
+	min-width:320px;
+	margin:20px auto;		
+	display: flex;  	
+	flex-flow: row wrap; 	
+	justify-content: center ; 
+	align-items: center ; 	
+	align-content: stretch; 
+	
+}
+
+.item{
+	color:#fff;
+	text-align:center;
+	margin:0 auto;
+	font-size:25px;
+}
+.itemFooter{
+	color:#fff;
+	text-align:center;
+	margin:0 auto;
+	font-size:15px;
+}
+
+header{
+	height:100px;
+	background-color:black;
+	overflow:hidden;
+	text-align:center;
+	
+    flex: 1 100%;
+    background: #959595;
+    background: -moz-linear-gradient(-45deg, #959595 0%, #0d0d0d 46%, #010101 50%, #0a0a0a 53%, #4e4e4e 76%, #383838 87%, #1b1b1b 100%);
+    background: -webkit-linear-gradient(-45deg, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%);
+    background: linear-gradient(135deg, #959595 0%,#0d0d0d 46%,#010101 50%,#0a0a0a 53%,#4e4e4e 76%,#383838 87%,#1b1b1b 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#959595', endColorstr='#1b1b1b',GradientType=1 );
+}
+header h3{
+	line-height:40px;
+	margin:0;
+	font-size:35px;
+	float:left;
+	width:40%;
+	padding-left:20px;
+	box-sizing:border-box;
+}
+header nav{
+	float:left;
+	width:60%;
+	line-height:100px;
+	padding-right:20px;
+	box-sizing:border-box;
+}
+header ul{
+	list-style-type:none;	 		
+	margin:0;
+	padding:0;	
+	
+	display:flex;
+	flex-flow: row wrap;
+	justify-content: flex-end;  
+}
+header ul li{
+	margin:0 5px;	
+	font-size:20px;	
+	cursor:pointer;
+	color:#D5C5C5;
+}
+header ul li:hover{
+	color:#fff;
+}
+#cuerpo{	
+	background-color:tomato;
+	height:500px;
+	line-height:500px;
+	display: flex;
+    flex: none;
+    flex: 4 auto;
+    
+}
+aside{
+	background-color:lightblue;
+	height:500px;
+	line-height:500px;
+	
+	flex: 1 auto;
+    
+    background: #b4ddb4;
+    background: #cfe7fa;
+    background: -moz-linear-gradient(top, #cfe7fa 0%, #6393c1 100%);
+    background: -webkit-linear-gradient(top, #cfe7fa 0%,#6393c1 100%);
+    background: linear-gradient(to bottom, #cfe7fa 0%,#6393c1 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cfe7fa', endColorstr='#6393c1',GradientType=0 );
+}
+footer{
+	/*height:170px;*/
+	line-height:25px;
+	background-color:lightslategrey;
+    display: flex;
+    flex: none;
+    flex: 1 100%;
+    
+    background: #cb60b3;
+    background: -moz-linear-gradient(-45deg, #cb60b3 0%, #ad1283 50%, #de47ac 100%);
+    background: -webkit-linear-gradient(-45deg, #cb60b3 0%,#ad1283 50%,#de47ac 100%);
+    background: linear-gradient(135deg, #cb60b3 0%,#ad1283 50%,#de47ac 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cb60b3', endColorstr='#de47ac',GradientType=1 );
+}
+
+@media screen and (max-width: 600px) {
+	
+	header nav{
+		line-height:31px;
+	}
+	header ul{	
+	 	flex-flow: column wrap;	
+	 	align-items: center; 
+	 	justify-content: center;  	
+	}
+	header ul li{
+		margin-bottom:2px;
+	}
+	
+	
+	header{
+		order:0;
+	}
+	
+	#cuerpo{
+		flex: 1 100%;
+		order:2;		
+	}
+	
+	aside{
+		flex: 1 100%;
+		order:1;		
+	}
+	
+	footer{
+		order:3;
+	}
+
+}
+
+/* The new syntax needed by standard-compliant browsers (IE 10 and Firefox 10 onwards), without prefix */  
+body{
+    background-image: url("../img/fuerteventura.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}

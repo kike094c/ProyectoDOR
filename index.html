@@ -29,6 +29,12 @@
             }).addTo(mymap);
                 L.marker([lat, long]).addTo(mymap)
                 .bindPopup("<b>You are here!</b>.");
+
+                L.circle([lat, long, -0.11],{
+                    color: 'red',
+                    fillColor: '#f03',
+                    fillOpacity: 0.5,
+                    radius: 500}).addTo(mymap).bindPopup("<b>You are in this zpne!</b>.");
             }
              
             // Define callback function for failed attempt
